@@ -25,6 +25,43 @@
 
 <body>
     <main class="main">
+        <!-- desktop header -->
+        <header class="header">
+            <h1 class="header__logo">
+                <img src="./images/logo.svg" alt="Logo">
+            </h1>
+            <nav class="header__nav">
+                <ul class="header__nav__list">
+                    <li class="header__nav__item">
+                        <span class="header__nav__item__text">Features</span>
+                        <span class="header__nav__item__logo">
+                            <img src="./images/icon-arrow-down.svg" alt="">
+                        </span>
+                    </li>
+                    <li class="header__nav__item">
+                        <span class="header__nav__item__text">Company</span>
+                        <span class="header__nav__item__logo">
+                            <img src="./images/icon-arrow-down.svg" alt="">
+                        </span>
+                    </li>
+                    <li class="header__nav__item">
+                        <span class="header__nav__item__text">Carrers</span>
+                    </li>
+                    <li class="header__nav__item">
+                        <span class="header__nav__item__text">About</span>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__cta">
+                <button class="header__cta-login">
+                    Login
+                </button>
+                <button class="header__cta-registor">
+                    Register
+                </button>
+            </div>
+        </header>
+        <!-- mobile header and overlay -->
         <div class="overlay" id="overlay" hidden></div>
         <header class="header-mobile">
             <h1 class="header-mobile-logo">
@@ -116,7 +153,8 @@
         </nav>
         <section class="hero-mb">
             <div class="hero-mb-block hero-mb-img">
-                <img src="./images/image-hero-mobile.png" alt="">
+                <img src="./images/image-hero-mobile.png" alt="" class="hero-img-mb">
+                <img src="./images/image-hero-desktop.png" alt="" class="hero-img">
             </div>
             <div class="hero-mb-block hero-mb-content">
                 <h2 class="hero-mb-block-heading">
