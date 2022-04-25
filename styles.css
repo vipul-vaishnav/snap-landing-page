@@ -31,6 +31,168 @@ body {
   max-width: 100vw;
   width: 100%;
   overflow-x: hidden;
+  background-color: var(--AlmostWhite);
+}
+
+.main {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.overlay {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 99;
+}
+
+/* navigation mobile */
+.nav-mb {
+  background-color: var(--AlmostWhite);
+  width: 250px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  z-index: 9999;
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.25);
+}
+
+.nav-mb-close {
+  cursor: pointer;
+  text-align: right;
+  padding: 1.5rem;
+}
+
+.nav-list {
+  margin-top: 2rem;
+  padding: 0 2.75rem;
+}
+
+.nav-item {
+  margin: 2rem 0;
+  cursor: pointer;
+  color: var(--MediumGray);
+}
+
+.nav-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.75rem;
+}
+
+.nav-item-logo {
+  transform: translateY(-1px);
+}
+
+.drop-menu {
+  width: 100%;
 }
 
 /* Mobile First */
+
+/* Header */
+.header-mobile {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+}
+
+.header-mobile-logo {
+  margin-top: 0.55rem;
+}
+
+.header-mobile-logo-link {
+  cursor: default;
+}
+
+.header-mobile-navbtn {
+  cursor: pointer;
+}
+
+/* Hero */
+
+.hero-mb {
+  width: 100%;
+}
+
+.hero-mb-block {
+  width: 100%;
+}
+
+.hero-mb-img {
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+.hero-mb-img img {
+  width: 100%;
+}
+
+.hero-mb-content {
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.hero-mb-block-heading,
+.hero-mb-block-paragraph,
+.hero-mb-block-btn {
+  text-align: center;
+}
+
+.hero-mb-block-heading {
+  color: var(--AlmostBlack);
+  font-weight: 700;
+  font-size: 3.375rem;
+}
+
+.hero-mb-block-paragraph {
+  color: var(--MediumGray);
+  font-size: 1.6rem;
+  line-height: 1.45;
+  margin: 2rem auto;
+}
+
+.hero-mb-block-btn {
+  margin: 0 auto;
+  border: 1px solid var(--AlmostBlack);
+  outline: 0;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--AlmostWhite);
+  background-color: var(--AlmostBlack);
+  padding: 1.4rem 2rem;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out 0.1s;
+}
+
+.hero-mb-block-btn:hover {
+  color: var(--AlmostBlack);
+  background-color: transparent;
+}
+
+.hero-mb-block-client {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2.5rem;
+  margin: 4rem auto;
+}
+
+.hero-mb-block-client .client-img {
+  width: 100%;
+}
+
+.hero-mb-block-client .client-img img {
+  width: 100%;
+}

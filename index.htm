@@ -25,39 +25,120 @@
 
 <body>
     <main class="main">
+        <div class="overlay"></div>
         <header class="header-mobile">
-            <div class="header-mobile-logo">
+            <h1 class="header-mobile-logo">
                 <a href="./index.htm" class="header-mobile-logo-link">
                     <img src="./images/logo.svg" alt="LOGO">
                 </a>
-            </div>
-
+            </h1>
             <div class="header-mobile-navbtn">
-                <button class="header-mobile-navbtn-ham">
-                    <img src="./images/icon-menu.svg" alt="Hamburger Button">
-                </button>
+                <img src="./images/icon-menu.svg" alt="Hamburger Button">
+            </div>
+        </header>
+        <!-- mobile navigation -->
+        <nav class="nav-mb">
+            <div class="nav-mb-close">
+                <img src="./images/icon-close-menu.svg" alt="Close button">
             </div>
 
-            <!-- <nav class="header-mobile-navigation">
+            <ul class="nav-list">
+                <li class="nav-item nav-dropdown">
+                    <span class="nav-item-text">Features</span>
+                    <span class="nav-item-logo">
+                        <img src="./images/icon-arrow-down.svg" alt="">
+                    </span>
+                </li>
+                <li class="drop-menu" id="features">
+                    <ul class="drop-menu-list">
+                        <li class="drop-menu-item">
+                            <span class="drop-menu-item-logo">
+                                <img src="./images/icon-todo.svg" alt="">
+                            </span>
+                            <span class="drop-menu-item-text">
+                                Todo List
+                            </span>
+                        </li>
+                        <li class="drop-menu-item">
+                            <span class="drop-menu-item-logo">
+                                <img src="./images/icon-calendar.svg" alt="">
+                            </span>
+                            <span class="drop-menu-item-text">
+                                Calendar
+                            </span>
+                        </li>
+                        <li class="drop-menu-item">
+                            <span class="drop-menu-item-logo">
+                                <img src="./images/icon-reminders.svg" alt="">
+                            </span>
+                            <span class="drop-menu-item-text">
+                                Remainders
+                            </span>
+                        </li>
+                        <li class="drop-menu-item">
+                            <span class="drop-menu-item-logo">
+                                <img src="./images/icon-planning.svg" alt="">
+                            </span>
+                            <span class="drop-menu-item-text">
+                                Planning
+                            </span>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item nav-dropdown">
+                    <span class="nav-item-text">Company</span>
+                    <span class="nav-item-logo">
+                        <img src="./images/icon-arrow-down.svg" alt="">
+                    </span>
+                </li>
+                <li class="drop-menu" id="company">
+                    <ul class="drop-menu-list">
+                        <li class="drop-menu-item">
+                            <span class="drop-menu-item-text">
+                                History
+                            </span>
+                        </li>
+                        <li class="drop-menu-item">
+                            <span class="drop-menu-item-text">
+                                Our Team
+                            </span>
+                        </li>
+                        <li class="drop-menu-item">
+                            <span class="drop-menu-item-text">
+                                Blog
+                            </span>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">Carrers</li>
+                <li class="nav-item">About</li>
+            </ul>
+        </nav>
+        <section class="hero-mb">
+            <div class="hero-mb-block hero-mb-img">
+                <img src="./images/image-hero-mobile.png" alt="">
+            </div>
+            <div class="hero-mb-block hero-mb-content">
+                <h2 class="hero-mb-block-heading">
+                    Make remote work
+                </h2>
 
-            </nav> -->
-        </header>
-        <!-- <header class="header">
-            Features
-            Company
-            Careers
-            About
+                <p class="hero-mb-block-paragraph">
+                    Get your team in sync, no matter your location. Streamline processes,
+                    create team rituals, and watch productivity soar.
+                </p>
 
-            Login
-            Register
-        </header> -->
-        <section class="hero">
-            Make remote work
+                <button class="hero-mb-block-btn">
+                    Learn more
+                </button>
 
-            Get your team in sync, no matter your location. Streamline processes,
-            create team rituals, and watch productivity soar.
-
-            Learn more
+                <div class="hero-mb-block-client">
+                    <div class="client-img"><img src="./images/client-databiz.svg" alt=""></div>
+                    <div class="client-img"><img src="./images/client-audiophile.svg" alt=""></div>
+                    <div class="client-img"><img src="./images/client-meet.svg" alt=""></div>
+                    <div class="client-img"><img src="./images/client-maker.svg" alt=""></div>
+                </div>
+            </div>
         </section>
         <div class="attribution">
             Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
