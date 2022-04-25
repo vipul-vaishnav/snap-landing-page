@@ -25,31 +25,31 @@
 
 <body>
     <main class="main">
-        <div class="overlay"></div>
+        <div class="overlay" id="overlay" hidden></div>
         <header class="header-mobile">
             <h1 class="header-mobile-logo">
                 <a href="./index.htm" class="header-mobile-logo-link">
                     <img src="./images/logo.svg" alt="LOGO">
                 </a>
             </h1>
-            <div class="header-mobile-navbtn">
+            <div class="header-mobile-navbtn" id="menu-open">
                 <img src="./images/icon-menu.svg" alt="Hamburger Button">
             </div>
         </header>
         <!-- mobile navigation -->
-        <nav class="nav-mb">
-            <div class="nav-mb-close">
+        <nav class="nav-mb nav-move" id="navigation">
+            <div class="nav-mb-close" id="menu-close">
                 <img src="./images/icon-close-menu.svg" alt="Close button">
             </div>
 
             <ul class="nav-list">
-                <li class="nav-item nav-dropdown">
+                <li class="nav-item nav-dropdown" id="features-btn">
                     <span class="nav-item-text">Features</span>
                     <span class="nav-item-logo">
-                        <img src="./images/icon-arrow-down.svg" alt="">
+                        <img src="./images/icon-arrow-down.svg" alt="" class="arrow-img" id="features-arrow">
                     </span>
                 </li>
-                <li class="drop-menu" id="features">
+                <li class="drop-menu" id="features-menu" hidden>
                     <ul class="drop-menu-list">
                         <li class="drop-menu-item">
                             <span class="drop-menu-item-logo">
@@ -85,13 +85,13 @@
                         </li>
                     </ul>
                 </li>
-                <li class="nav-item nav-dropdown">
+                <li class="nav-item nav-dropdown" id="company-btn">
                     <span class="nav-item-text">Company</span>
                     <span class="nav-item-logo">
-                        <img src="./images/icon-arrow-down.svg" alt="">
+                        <img src="./images/icon-arrow-down.svg" alt="" class="arrow-img" id="company-arrow">
                     </span>
                 </li>
-                <li class="drop-menu" id="company">
+                <li class="drop-menu" id="company-menu" hidden>
                     <ul class="drop-menu-list">
                         <li class="drop-menu-item">
                             <span class="drop-menu-item-text">
@@ -145,6 +145,8 @@
             Coded by <a href="https://github.com/vipul-vaishnav"><strong>Vipul Vaishnav</strong></a>.
         </div>
     </main>
+    <!-- Script -->
+    <script src="./script.js"></script>
 </body>
 
 </html>
